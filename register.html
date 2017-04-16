@@ -1,0 +1,116 @@
+<html lang="eng-In">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Black-Bird|Registration Form</title>
+	<link rel="stylesheet" href="register.css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	
+	<!--<script type="text/javascript">
+	function check(){
+		var pass=document.getElementById('pass').value;
+		var cpass=document.getElementById('confpass').value;
+		if(pass==cpasss)
+		{
+			return true;
+		}
+		else
+		{
+		
+		}
+	}
+	</script>-->
+	
+	<script type="text/javascript">
+	var t="f"
+	function change(){
+		
+	if(t=="f")
+	{
+	 $('#img').fadeIn(2000);
+	 t="s"
+	}
+	else
+	{
+	$('#img').fadeOut(2000);
+	t="f"
+	}
+	
+	
+	}
+	var timer = setInterval('change()',1700);
+	
+	</script>
+	
+
+</head>
+
+<body>
+
+	<nav id="cent">
+		<img src="images/tag.png" width="500px" height="100px" id="img" />
+	</nav>
+		<h1 id="para">Sign Up</h1>
+	<div class="icon">
+       <a href="#"><img src="images/icon/white_facebook.png" id="fb"  /></a>	
+	   <a href="#"><img src="images/icon/white_twitter_bird.png" id="twt"/></a>
+	
+	
+	</div>
+	
+	<div class="body">
+		<form action="" method="post"/>
+	<div class="column">	
+	
+			
+			<label for="name">full name</label>
+				<input type="text" name="name" id="name" placeholder="Type your full name" required />
+			<label for="email">email adress</label>
+				<input type="email" name="email" id="email"/ placeholder="Type your e-mail" required />
+			<label for="gender">gender</label>
+				<select name="gender" id="gender" required >
+				<nav>
+					<option value="none" class="a" disabled>Choose your gender</option>
+					<option value="male" class="a" selected>Male</option>
+					<option value="female" class="a">Female</option>
+					</nav>
+				</select>	
+		
+		
+	</div>
+	
+	<div class="column">	
+	
+			<label for="name">contact number</label>
+				<input type="tel" name="contact number" id="contact" placeholder="+91 99999 99999" required /><!--type tel for mob no -->
+			<label for="dob">date of birth</label>	
+				<input type="date" name="date of birth" id="dob" placeholder="DD/MM/YYYY" required />
+		
+	</div>
+	
+	<div class="column">	
+	
+			
+			<label for="pass">password</label>
+				<input type="password" name="password" id="pass" placeholder="Minimum 6 characters" required />
+			<label for="confpass">confirm password</label>
+				<input type="password" name="confirm-password" id="confpass"/ placeholder="Re-type your password" required />
+		
+		
+	</div>
+	
+	
+	<center><input type="submit" id="submit" value="Submit" /></center>
+	
+	
+	</form>
+	
+	</div>
+	
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jq4.js" ></script>
+
+
+</body>
+</html>
